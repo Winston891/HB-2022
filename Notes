@@ -1,0 +1,40 @@
+Session - 89 [Modern Bootstrapping in Hibernate]
+
+1.What do you mean by Marker Interface/Tag Interface?
+
+Ans : The Interface which makes the Underlying JVM/Server/Framework/Container to provide Special Run-time Capabilities to Implementation
+Class Objects.
+
+2.Provide some of Examples of Marker Interface?
+
+Ans : 
+
+    1.java.io.Serializable --> Makes the Impl class Object as Serializable Object.
+    2.java.io.Cloneable --> Makes the Impl Class Object as Cloneable Object.
+    3.org.hibernate.service.Service --> Makes the Impl Class Object as Hibernate Service.
+    4.java.rmi.Remote --> Makes the Impl Class Object as Remote Object.
+   
+3.Are Marker Interfaces Empty Interfaces?
+
+Ans : Yes.
+
+4.Define Service Interface of org.hibernate.service?
+
+Ans : The Service Interface has multiple Child Interfaces and these Child Interfaces has Implementation Class which represent Various 
+      Services.These Services are Bound with SessionFactory Object based on the cfgs we do in HB cfg file.
+      
+      Some of the Sub-Interface
+        1.ConnectionProvider
+        2.BatchBuilder
+        3.CacheImplementor
+        4.ClassLoader,etc....
+        
+5.Can we Develop Custom Services?
+
+Ans : Yes.By Implementing Sub Interface of Service Interface.
+
+6.Define ServiceRegistry Interface of org.hibernate.service?
+
+Ans : ServiceRegistry is a Registry where services can be Registered.
+
+7.Mention the Sub Inter
